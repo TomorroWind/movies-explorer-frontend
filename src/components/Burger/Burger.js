@@ -12,15 +12,17 @@ export default function Burger() {
             <img src={close} alt="Закрыть меню" className="burger__close" />
           </label>
           <nav className="burger__nav">
-            <li className="header__nav-item">
-              <NavLink to="/" exact className="burger__link" activeClassName="burger__link_active">Главная</NavLink>
-            </li>
-            <li className="header__nav-item">
-              <NavLink to="/movies" className="burger__link" activeClassName="burger__link_active">Фильмы</NavLink>
-            </li>
-            <li className="header__nav-item">
-              <NavLink to="/saved-movies" className="burger__link" activeClassName="burger__link_active">Сохраненные фильмы</NavLink>
-            </li>
+            <ul className="list burger__nav-list">
+              <li className="header__nav-item">
+                <NavLink to="/" exact className="burger__link" activeClassName="burger__link_active">Главная</NavLink>
+              </li>
+              <li className="header__nav-item">
+                <NavLink to="/movies" className="burger__link" activeClassName="burger__link_active">Фильмы</NavLink>
+              </li>
+              <li className="header__nav-item">
+                <NavLink to="/saved-movies" className="burger__link" activeClassName="burger__link_active">Сохраненные фильмы</NavLink>
+              </li>
+            </ul>
           </nav>
           <a href="/profile" className="header__profile burger__profile">
             <div className="header__profile-icon" />Аккаунт

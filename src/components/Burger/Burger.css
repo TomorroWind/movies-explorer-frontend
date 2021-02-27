@@ -49,6 +49,7 @@
   object-position: center;
   transform: rotate(45deg);
   transition: transform ease-out .2s;
+  cursor: pointer;
 }
 
 .burger__close:hover {
@@ -57,6 +58,9 @@
 
 .burger__nav {
   flex: 1 1 auto;
+}
+
+.burger__nav-list {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -71,6 +75,11 @@
   font-size: 18px;
   line-height: 1.2;
   color: #000;
+  transition: all ease-out .2s;
+}
+
+.burger__link:hover {
+  opacity: .7;
 }
 
 .burger__link_active {
@@ -88,7 +97,7 @@
 
   .burger__close {
     top: 13px;
-    left: 13px;
+    right: 13px;
   }
 
   .burger__link {
