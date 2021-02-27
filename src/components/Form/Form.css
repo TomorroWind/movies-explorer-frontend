@@ -1,0 +1,297 @@
+.form {
+  padding: 75px 0 70px 0;
+  flex: 1 1 auto;
+}
+
+.form_style_with-logo {
+  padding-top: 70px;
+}
+
+.form__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.form__logo {
+  margin-bottom: 40px;
+  align-self: flex-start;
+  transition: all ease-out .2s;
+}
+
+.form__logo:hover {
+  opacity: .7;
+}
+
+.form__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.form__title_style_with-logo {
+  align-self: flex-start;
+}
+
+.form__fieldset {
+  width: 100%;
+  flex: 1 1 auto;
+  border: 0;
+  padding: 0;
+  margin: 110px 0 0 0;
+}
+
+.form__fieldset_style_with-logo {
+  margin-top: 40px;
+}
+
+.form__field-container {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8e8e8;
+
+}
+
+.form__label {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.form__field {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0 0 0 60px;
+  width: 100%;
+  outline: 0;
+  font-size: 11px;
+  line-height: 1;
+  text-align: right;
+}
+
+.form__field-container:last-of-type {
+  border: 0;
+}
+
+.form__btn-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.form__edit {
+  color: #000;
+  margin: 0;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.25;
+  transition: all ease-out .2s;
+}
+
+.form__exit {
+  margin: 15px 0 0 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.25;
+  color: #ff3055;
+  transition: all ease-out .2s;
+}
+
+.form__edit:hover {
+  opacity: .7;
+}
+
+.form__exit:hover {
+  opacity: .7;
+}
+
+.form__input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  margin-bottom: 8px;
+}
+
+.form__input-container:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__input-label {
+  font-size: 10px;
+  line-height: 1.2;
+  color: #a0a0a0;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom-color: #3456f3;
+}
+
+.form__input_state_error {
+  color: #ff3055;
+}
+
+.form__input-error {
+  margin: 5px 0 0 0;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #ff3055;
+  visibility: hidden;
+}
+
+.form__input-error_visible {
+  visibility: visible;
+}
+
+.form__submit {
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #3456f3;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 3px;
+  transition: all ease-out .2s;
+}
+
+.form__submit:hover {
+  background-color: #2be080;
+}
+
+.form__submit:active {
+  opacity: .7;
+}
+
+.form__link-description {
+  margin: 15px 0 0 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.form__link {
+  text-decoration: none;
+  color: #3456f3;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: all ease-out .2s;
+}
+
+.form__link:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 984px) {
+  .form {
+    padding: 0;
+  }
+
+  .form_style_with-logo {
+    padding-top: 0;
+  }
+
+  .form__container {
+    justify-content: center;
+  }
+
+  .form__fieldset {
+    flex: 0 1 auto;
+    margin-top: 80px;
+  }
+
+  .form__fieldset_style_with-logo {
+    margin-top: 40px;
+  }
+
+  .form__btn-group {
+    margin-top: 195px;
+  }
+
+  .form__btn-group_style_with-logo {
+    margin-top: 135px;
+  }
+
+}
+
+@media screen and (max-width: 568px) {
+  .form {
+    padding: 70px 0 40px 0;
+  }
+
+  .form__logo {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .form__title_style_with-logo {
+    align-self: center;
+  }
+
+  .form__container {
+    justify-content: stretch;
+  }
+
+  .form__fieldset {
+    flex: 1 1 auto;
+    margin-top: 65px;
+  }
+
+  .form__fieldset_style_with-logo {
+    margin-top: 80px;
+  }
+
+  .form__btn-group {
+    margin-top: 0;
+  }
+
+  .form__register {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .form__exit {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .form__input-label {
+    font-size: 10px;
+  }
+
+  .form__input-error {
+    font-size: 10px;
+  }
+
+  .form__submit {
+    font-size: 12px;
+  }
+
+  .form__link-description {
+    font-size: 12px;
+  }
+
+  .form__link {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+}
