@@ -1,5 +1,5 @@
 import './Burger.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import close from '../../images/close.svg';
 
 export default function Burger() {
@@ -24,9 +24,9 @@ export default function Burger() {
               </li>
             </ul>
           </nav>
-          <a href="/profile" className="header__profile burger__profile">
+          <Link to="/profile" className="header__profile burger__profile">
             <div className="header__profile-icon" />Аккаунт
-          </a>
+          </Link>
         </div>
 
       </section>

@@ -1,9 +1,10 @@
 import './Form.css';
 import logo from '../../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 export default function FormData(props) {
-  const { title, name, showLogo, fields, buttons } = props;
+  const { title, name, showLogo, fields, buttons, onSubmit } = props;
 
   let formStyles = 'form section';
   let containerStyles = 'container form__container';
@@ -24,8 +25,8 @@ export default function FormData(props) {
 
   return (
     <section className={formStyles}>
-      <form method="POST" action="#" name={name} className={containerStyles}>
-        {showLogo && <a href="/" className="form__logo"><img src={logo} alt="Логотип" /></a>}
+      <form method="POST" action="#" name={name} className={containerStyles} onSubmit={onSubmit}>
+        {showLogo && <Link to="/" className="form__logo"><img src={logo} alt="Логотип" /></Link>}
         <h1 className={titleStyles}>{title}</h1>
         <fieldset className={fieldsetStyles}>
           {fields}
